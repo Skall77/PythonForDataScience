@@ -3,15 +3,15 @@ import sys
 
 def display_sums_characters(text):
     """
-    Display the number of characters in the text, and the number of
-    characters for each category (upper letters, lower letters, punctuation
-    marks, spaces, digits).
+Display the number of characters in the text, and the number of
+characters for each category (upper letters, lower letters, punctuation
+marks, spaces, digits).
 
-    Param:
-    text (str): The text to count.
+Param:
+text (str): The text to count.
 
-    Return:
-        None
+Return:
+    None
     """
 
     char_count = 0
@@ -43,13 +43,13 @@ def display_sums_characters(text):
 
 def main():
     """
-    The main function of the program.
-    Check if the user provided an argument, if not, ask for a text.
+The main function of the program.
+Check if the user provided an argument, if not, ask for a text.
 
-    Param:
-        None
-    Return:
-        None
+Param:
+    None
+Return:
+    None
     """
 
     try:
