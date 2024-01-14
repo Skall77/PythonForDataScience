@@ -8,10 +8,10 @@ def ft_invert(array) -> np.ndarray:
 Inverts the color of the image received.
 
 Param:
-array (np.ndarray): Pixel content in RGB format.
+    array (np.ndarray): Pixel content in RGB format.
 
 Return:
-np.ndarray: Pixel content in RGB format.
+    np.ndarray: Pixel content in RGB format.
     """
     image = 255 - array
     Image.fromarray(image).show()
@@ -24,10 +24,10 @@ def ft_red(array) -> np.ndarray:
 Converts the image received to red.
 
 Param:
-array (np.ndarray): Pixel content in RGB format.
+    array (np.ndarray): Pixel content in RGB format.
 
 Return:
-np.ndarray: Pixel content in RGB format.
+    np.ndarray: Pixel content in RGB format.
     """
     image = array.copy()
     image[:, :, 1] = 0
@@ -42,10 +42,10 @@ def ft_green(array) -> np.ndarray:
 Converts the image received to green.
 
 Param:
-array (np.ndarray): Pixel content in RGB format.
+    array (np.ndarray): Pixel content in RGB format.
 
 Return:
-np.ndarray: Pixel content in RGB format.
+    np.ndarray: Pixel content in RGB format.
     """
     image = array.copy()
     image[:, :, 0] = 0
@@ -60,10 +60,10 @@ def ft_blue(array) -> np.ndarray:
 Converts the image received to blue.
 
 Param:
-array (np.ndarray): Pixel content in RGB format.
+    array (np.ndarray): Pixel content in RGB format.
 
 Return:
-np.ndarray: Pixel content in RGB format.
+    np.ndarray: Pixel content in RGB format.
     """
     image = array.copy()
     image[:, :, 0] = 0
@@ -78,10 +78,10 @@ def ft_grey(array) -> np.ndarray:
 Converts the image received to grey.
 
 Param:
-array (np.ndarray): Pixel content in RGB format.
+    array (np.ndarray): Pixel content in RGB format.
 
 Return:
-np.ndarray: Pixel content in RGB format.
+    np.ndarray: Pixel content in RGB format.
     """
     image = np.dot(array[..., :3], [0.299, 0.587, 0.114])
     image = image.astype(np.uint8)
